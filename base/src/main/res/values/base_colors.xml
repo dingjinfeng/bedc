@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--theme primary color-->
+    <color name="base_primary_gradient_start">#607CFF</color>
+    <color name="base_primary_gradient_end">#78CBF5</color>
+
+    <!--accent color-->
+    <color name="base_colorPrimary">#75BDFF</color>
+
+    <!--background-->
+    <color name="base_background">#FCFCFF</color>
+    <color name="base_underBackground">#fff3f4f8</color>
+
+    <!--text primary color-->
+    <color name="base_primaryText">#1A1C1E</color>
+    <!--text secondary color-->
+    <color name="base_secondaryText">#72777f</color>
+
+    <color name="base_lightText">#8b9098</color>
+    <!--translucent-->
+    <color name="base_translucent">#99000000</color>
+    <color name="base_light_translucent">#60000000</color>
+
+    <!--press mask-->
+    <color name="base_press_mask">#6FCCCCCC</color>
+    <!--disable color-->
+    <color name="base_disable_color">#FFD9D9D9</color>
+    <!--waring color-->
+    <color name="base_warning">#FF554C</color>
+
+    <color name="base_ripple">#B2B4B6</color>
+
+    <color name="base_dialog_gray_button">#FFEAE9E9</color>
+
+    <color name="base_divider">#EEEEEE</color>
+</resources>

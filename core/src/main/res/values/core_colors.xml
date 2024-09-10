@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utF-8"?>
+<resources>
+    <!--PIN-->
+    <color name="core_pin_shadow">#FF102838</color>
+    <color name="core_card_amount_color">#FFFF0000</color>
+
+    <color name="core_settle_item_gray">#F4F5F9</color>
+    <color name="core_settle_item_head">#F0F0F0</color>
+
+    <color name="core_signature_clear">#FF1E88E5</color>
+    <color name="core_signature_ok">#ff1adea8</color>
+
+    <color name="core_manual">#fff3f3f5</color>
+</resources>

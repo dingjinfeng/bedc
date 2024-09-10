@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Bank Template</string>
+
+    <string name="app_exit_prompt">Exit this application?</string>
+    <string name="app_menu_top_description">pay for amount</string>
+    <string name="app_menu_print_folder_title">Print</string>
+
+    <string name="app_version">Version</string>
+</resources>

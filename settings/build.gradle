@@ -1,0 +1,26 @@
+apply plugin: 'com.android.library'
+
+android {
+    namespace 'acquire.settings'
+    compileSdk versions.compileSdkVersion
+
+    defaultConfig {
+        minSdk versions.minSdkVersion
+    }
+    buildFeatures{
+        viewBinding = true
+    }
+    // Java1.8 compile
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':core')
+    implementation project(':database')
+    implementation androidx['appcompat']
+    implementation androidx['recyclerview']
+    implementation google['material']
+}

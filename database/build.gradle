@@ -1,0 +1,30 @@
+plugins {
+    id 'com.android.library'
+}
+android {
+    namespace 'newland.database'
+    compileSdk versions.compileSdkVersion
+
+    defaultConfig {
+        minSdk versions.minSdkVersion
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation":
+                                     "$projectDir/schemas".toString()]
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation androidx['room']
+    annotationProcessor androidx['room-compiler']
+    implementation androidx['room-testing']
+    api project(':base')
+
+
+}

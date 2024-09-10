@@ -1,0 +1,34 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'acquire.sdk'
+    compileSdk versions.compileSdkVersion
+
+    defaultConfig {
+        minSdk versions.minSdkVersion
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compileOnly fileTree(dir: "../app/libs", include: ["*.aar"])
+    compileOnly fileTree(dir: "../app/libs", include: ["*.jar"])
+//    api files("../app/libs/TOMSClientApi_V1.0.05.aar")
+
+    implementation project(':base')
+
+    implementation androidx['appcompat']
+    //These libraries for FLY KEY
+    implementation squareup['converter-gson']
+    implementation squareup['retrofit']
+    implementation google['gson']
+
+}

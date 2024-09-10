@@ -1,0 +1,45 @@
+plugins {
+    id 'com.android.library'
+}
+android {
+    namespace 'acquire.core'
+    compileSdk versions.compileSdkVersion
+
+    defaultConfig {
+        minSdk versions.minSdkVersion
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [eventBusIndex : project.getName()]
+            }
+        }
+        buildConfigField "long", "RELEASE_TIMESTAMP", System.currentTimeMillis() + "L"
+        buildConfigField "String", "TEMPLATE_VERSION", '"'+template +'"'
+    }
+    buildFeatures {
+        viewBinding = true
+        aidl true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation project(':database')
+    implementation androidx['recyclerview']
+    implementation androidx['constraintlayout']
+    implementation androidx['viewpager2']
+    api(xml['xstream']) {
+        exclude group: 'xmlpull'
+    }
+    api project(':base')
+    api project(':sdk_helper')
+    api google['gson']
+    implementation androidx['appcompat']
+    implementation androidx['camerax']
+    implementation androidx['camerax-lifecycle']
+    implementation androidx['camerax-view']
+//    implementation greenrobot['eventbus']
+//    annotationProcessor greenrobot['eventbus-compiler']
+}

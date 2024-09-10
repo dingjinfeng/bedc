@@ -1,0 +1,470 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "986faba88b7983a862e243201a5dd1fc",
+    "entities": [
+      {
+        "tableName": "T_RECORD",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `MID` TEXT, `TID` TEXT, `TRANS_TYPE` TEXT, `PROCESS_CODE` TEXT, `STATUS` INTEGER NOT NULL, `CARD_NO` TEXT, `ENTRY_MODE` INTEGER NOT NULL, `AMOUNT` INTEGER NOT NULL, `TIP_AMOUNT` INTEGER NOT NULL, `BILL_AMOUNT` INTEGER NOT NULL, `TRACE_NO` TEXT, `TIME` TEXT, `DATE` TEXT, `EXP_DATE` TEXT, `FIELD_22` TEXT, `CARD_SERIAL_NO` TEXT, `TRACK2` TEXT, `TRACK3` TEXT, `REFER_NO` TEXT, `AUTH_CODE` TEXT, `RESPONSE_CODE` TEXT, `BATCH_NO` TEXT, `ORIGINAL_BATCH` TEXT, `ORIGINAL_TRACE_NO` TEXT, `ORIGINAL_AUTH_CODE` TEXT, `ORIGINAL_REFER_NO` TEXT, `CARD_ORGANIZATION` TEXT, `BATCH_UP_FLAG` INTEGER NOT NULL, `ORIGINAL_DATE` TEXT, `CURRENCY_CODE` TEXT, `QR_PAY_CODE` TEXT, `BIZ_ORDER_NO` TEXT, `FIELD_55` TEXT, `SIGN_PATH` TEXT, `FREE_SIGN` INTEGER NOT NULL, `FREE_PIN` INTEGER NOT NULL, `OUT_ORDER_NO` TEXT, `CARD_SN` TEXT, `EMV_PRINT_DATA` TEXT, `REMARKS` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mid",
+            "columnName": "MID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tid",
+            "columnName": "TID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "transType",
+            "columnName": "TRANS_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "processCode",
+            "columnName": "PROCESS_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "STATUS",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "cardNo",
+            "columnName": "CARD_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "entryMode",
+            "columnName": "ENTRY_MODE",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "amount",
+            "columnName": "AMOUNT",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tipAmount",
+            "columnName": "TIP_AMOUNT",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "billAmount",
+            "columnName": "BILL_AMOUNT",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "traceNo",
+            "columnName": "TRACE_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "time",
+            "columnName": "TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "date",
+            "columnName": "DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expDate",
+            "columnName": "EXP_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "field22",
+            "columnName": "FIELD_22",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cardSerialNo",
+            "columnName": "CARD_SERIAL_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "track2",
+            "columnName": "TRACK2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "track3",
+            "columnName": "TRACK3",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "referNo",
+            "columnName": "REFER_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "authCode",
+            "columnName": "AUTH_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "responseCode",
+            "columnName": "RESPONSE_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "batchNo",
+            "columnName": "BATCH_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "origBatch",
+            "columnName": "ORIGINAL_BATCH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "origTraceNo",
+            "columnName": "ORIGINAL_TRACE_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "origAuthCode",
+            "columnName": "ORIGINAL_AUTH_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "origReferNo",
+            "columnName": "ORIGINAL_REFER_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cardOrg",
+            "columnName": "CARD_ORGANIZATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "batchUpFlag",
+            "columnName": "BATCH_UP_FLAG",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "origDate",
+            "columnName": "ORIGINAL_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currencyCode",
+            "columnName": "CURRENCY_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "qrPayCode",
+            "columnName": "QR_PAY_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bizOrderNo",
+            "columnName": "BIZ_ORDER_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "field55",
+            "columnName": "FIELD_55",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "signPath",
+            "columnName": "SIGN_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "freeSign",
+            "columnName": "FREE_SIGN",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "freePin",
+            "columnName": "FREE_PIN",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "outOrderNo",
+            "columnName": "OUT_ORDER_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cardSn",
+            "columnName": "CARD_SN",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "emvPrintData",
+            "columnName": "EMV_PRINT_DATA",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "remarks",
+            "columnName": "REMARKS",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "ID"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "T_MERCHANT",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `MID` TEXT, `TID` TEXT, `CARD_ORGANIZATION` TEXT, `BATCH_NO` TEXT, `SETTLE_EQUAL` INTEGER NOT NULL, `SETTLE_STEP` INTEGER NOT NULL, `SETTLE_DATE` TEXT, `SETTLE_TIME` TEXT, `LAST_RECEIPT` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mid",
+            "columnName": "MID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tid",
+            "columnName": "TID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cardOrg",
+            "columnName": "CARD_ORGANIZATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "batchNo",
+            "columnName": "BATCH_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "settleEqual",
+            "columnName": "SETTLE_EQUAL",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "settleStep",
+            "columnName": "SETTLE_STEP",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "settleDate",
+            "columnName": "SETTLE_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "settleTime",
+            "columnName": "SETTLE_TIME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "lastReceipt",
+            "columnName": "LAST_RECEIPT",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "ID"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "T_REVERSAL_DATA",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `HAS_SEND` INTEGER NOT NULL, `MID` TEXT, `TID` TEXT, `TRANS_TYPE` TEXT, `CARD_NO` TEXT, `ENTRY_MODE` INTEGER NOT NULL, `PROCESS_CODE` TEXT, `AMOUNT` INTEGER NOT NULL, `TRACE_NO` TEXT, `EXP_DATE` TEXT, `FIELD_22` TEXT, `CARD_SERIAL_NO` TEXT, `SERVER_CODE` TEXT, `ORIGINAL_AUTH_CODE` TEXT, `CURRENCY_CODE` TEXT, `FIELD_55` TEXT, `NII` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasSend",
+            "columnName": "HAS_SEND",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mid",
+            "columnName": "MID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tid",
+            "columnName": "TID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "transType",
+            "columnName": "TRANS_TYPE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cardNo",
+            "columnName": "CARD_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "entryMode",
+            "columnName": "ENTRY_MODE",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "processCode",
+            "columnName": "PROCESS_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "amount",
+            "columnName": "AMOUNT",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "traceNo",
+            "columnName": "TRACE_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "expDate",
+            "columnName": "EXP_DATE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "field22",
+            "columnName": "FIELD_22",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cardSerialNo",
+            "columnName": "CARD_SERIAL_NO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "serverCode",
+            "columnName": "SERVER_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "origAuthCode",
+            "columnName": "ORIGINAL_AUTH_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "currencyCode",
+            "columnName": "CURRENCY_CODE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "field55",
+            "columnName": "FIELD_55",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nii",
+            "columnName": "NII",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "ID"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '986faba88b7983a862e243201a5dd1fc')"
+    ]
+  }
+}

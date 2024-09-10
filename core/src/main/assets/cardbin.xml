@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <!--see CardBinProvider.class-->
+    <!--UNIONPAY-->
+    <organization name = "CUP">
+        <bin start = "60138200"  end = "601382058" />
+        <bin start = "60138206"  end = "601382088" />
+        <bin start = "60138209"  end = "601382198" />
+        <bin start = "60138220"  end = "601382268" />
+        <bin start = "60138227"  end = "601382508" />
+        <bin start = "60138251"  end = "601382618" />
+        <bin start = "601382620" end = "601382628" />
+        <bin start = "60138263"  end = "601382648" />
+        <bin start = "60138265"  end = "601382708" />
+        <bin start = "60138271"  end = "601382758" />
+        <bin start = "601382760" end = "601382768" />
+        <bin start = "60138277"  end = "6013829"   />
+        <bin start = "601428"    end = ""          />
+        <bin start = "60326513"  end = ""          />
+        <bin start = "603367"    end = ""          />
+        <bin start = "603601"    end = ""          />
+        <bin start = "603694"    end = ""          />
+        <bin start = "603708"    end = ""          />
+        <bin start = "632062"    end = ""          />
+        <bin start = "685800"    end = "690755"    />
+        <bin start = "900105"    end = "968809"    />
+        <bin start = "984300"    end = "984303"    />
+        <bin start = "810000"    end = "817199"    />
+        <bin start = "620000"    end = "629999"    />
+    </organization>
+
+    <!--VISA-->
+    <organization name = "VISA">
+        <bin start = "4"         end = ""          />
+    </organization>
+
+    <!--Mastercard-->
+    <organization name = "MASTER CARD">
+        <bin start = "510000"    end = "559999"    />
+        <bin start = "222100"    end = "272099"    />
+        <bin start = "500000"    end = "509999"    />
+    </organization>
+
+    <!--AMEX-->
+    <organization name = "AMEX">
+        <bin start = "34"        end = ""          />
+        <bin start = "37"        end = ""          />
+    </organization>
+
+    <!--JCB-->
+    <organization name = "JCB">
+        <bin start = "352800"    end = "356096"    />
+        <bin start = "356098"    end = "356204"    />
+        <bin start = "356206"    end = "356206"    />
+        <bin start = "356210"    end = "356214"    />
+        <bin start = "356219"    end = "356596"    />
+        <bin start = "356598"    end = "356733"    />
+        <bin start = "356735"    end = "356753"    />
+        <bin start = "356755"    end = "358999"    />
+    </organization>
+
+    <!--Discover-->
+    <organization name = "DISCOVER">
+        <bin start = "36"        end = ""          />
+        <bin start = "38"        end = ""          />
+        <bin start = "3095"      end = ""          />
+        <bin start = "300"       end = "305"       />
+        <bin start = "601100"    end = "601109"    />
+        <bin start = "601120"    end = "601149"    />
+        <bin start = "601174"    end = "601174"    />
+        <bin start = "601177"    end = "601179"    />
+        <bin start = "601186"    end = "601199"    />
+        <bin start = "644000"    end = "659999"    />
+    </organization>
+
+</root>

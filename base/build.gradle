@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'acquire.base'
+    compileSdk versions.compileSdkVersion
+
+    defaultConfig {
+        minSdk versions.minSdkVersion
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation androidx['appcompat']
+    implementation androidx['lifecycle-extensions']
+    implementation androidx['recyclerview']
+    implementation androidx['preference']
+    /*preference viewmodel ktx is 2.3.1, conflict with material&appcompat(viewmodel 2.5.1)*/
+//    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    api squareup['okhttp']
+    api airbnb['lottie']
+    api google['material']
+    api google['zxing']
+}

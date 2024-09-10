@@ -1,0 +1,91 @@
+plugins {
+    id 'com.android.application'
+}
+android {
+    namespace 'acquire.app'
+    compileSdk versions.compileSdkVersion
+
+    defaultConfig {
+        versionCode 39
+        versionName '3.9'
+        applicationId 'com.newland.template'
+        minSdk versions.minSdkVersion
+        targetSdk versions.targetSdkVersion
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+    // Java1.8 compile
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    //newland signing configs
+    signingConfigs {
+        mySignature {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile rootProject.file('newland_debug.keystore')
+            storePassword 'android'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+    buildTypes {
+        release {
+//            minifyEnabled true
+//            shrinkResources true
+//            //proguard file
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //signature file
+            signingConfig signingConfigs.mySignature
+        }
+        debug {
+            //signature file
+            signingConfig signingConfigs.mySignature
+        }
+
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            //project name
+            def project = project.getParent().getName()
+            //debug/release
+            def buildType = buildType.name
+            //current time. YYYYMMDDhhmm
+            def time = releaseTime()
+            //apk name, such as NSDK-BANKTEMPLATE-R3-1-npi-an-3.6-alpha10-debug-202209060848
+            def apkName = project + "-" + versionCode + "-" + versionName + "-" + buildType + "-" + time
+            if (variant.productFlavors != null && variant.productFlavors.size() > 0) {
+                //Add flavor name if use product flavors
+                apkName = apkName + "-" + variant.productFlavors[0].name
+            }
+            outputFileName = apkName.toUpperCase() + ".apk"
+        }
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+    androidTestImplementation androidx['runner']
+    androidTestImplementation androidx['espresso']
+    androidTestImplementation androidx['junit']
+    testImplementation junit
+    implementation androidx['appcompat']
+    implementation project(':core')
+    implementation project(':database')
+    implementation project(':settings')
+    implementation androidx['recyclerview']
+    implementation google['material']
+    implementation androidx['viewpager2']
+    implementation androidx['constraintlayout']
+//    debugImplementation squareup['leakcanary']
+}
+
+def static releaseTime() {
+    return new Date().format("YYYYMMddHHmm")
+}

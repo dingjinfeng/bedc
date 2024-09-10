@@ -1,0 +1,198 @@
+<resources>
+    <string name="settings_not_set">Unset</string>
+
+    <string name="settings_settle_record_exist">Please settle first</string>
+
+    <string name="settings_widget_edit_amount_too_big_frontfm">Max amount:</string>
+    <string name="settings_widget_edit_amount_too_small_frontfm">Min amount:</string>
+    <string name="settings_widget_edit_amount_format_wrong">Wrong format</string>
+    <!--SETTINS -->
+    <string name="settings_menu_title">Settings</string>
+    <string name="settings_menu_item_merchant">Merchant</string>
+    <string name="settings_menu_item_system">System</string>
+    <string name="settings_menu_item_communication">Network</string>
+    <string name="settings_menu_item_key">Key Manage</string>
+    <string name="settings_menu_item_password">Password</string>
+    <string name="settings_menu_item_print">Printer</string>
+    <string name="settings_menu_item_other">Clear Records</string>
+    <string name="settings_menu_item_update">Update Params</string>
+    <string name="settings_menu_item_signature">Signature</string>
+    <string name="settings_menu_item_external_pinpad">External PIN Pad</string>
+    <string name="settings_menu_item_scanner">Scanner</string>
+    <!--MERCHANT CONFIGURATION-->
+    <string name="settings_merchant_item_mid">Merchant Id:</string>
+    <string name="settings_merchant_item_tid">Terminal Id:</string>
+    <string name="settings_merchant_item_batch_no">Batch No:</string>
+    <string name="settings_merchant_add_button">+ Add</string>
+    <string name="settings_merchant_not_delete_last_merchant">Not delete last merchant</string>
+    <string name="settings_merchant_delete_prompt">Delete this merchant?</string>
+    <string name="settings_merchant_delete_completion">Merchant deleted success.</string>
+    <string name="settings_merchant_edit_name_dialog_title">Merchant Name</string>
+    <string name="settings_merchant_edit_name_dialog_null">Please input merchant name</string>
+    <string name="settings_merchant_edit_add_title">Add Merchant</string>
+    <string name="settings_merchant_edit_mid_hint">Merchant Id</string>
+    <string name="settings_merchant_edit_tid_hint">Termianl Id</string>
+    <string name="settings_merchant_edit_card_organization_hint">Card Org.</string>
+    <string name="settings_merchant_edit_batch_hint">Batch No</string>
+    <string name="settings_merchant_edit_card_organization_error_null">Select Card Org.</string>
+    <string name="settings_merchant_edit_mid_error_null">Enter merchant id</string>
+    <string name="settings_merchant_edit_mid_error_length">Must be 15 words</string>
+    <string name="settings_merchant_edit_mid_error_exist">This merchant has already existed.</string>
+    <string name="settings_merchant_edit_tid_error_null">Enter terminal id</string>
+    <string name="settings_merchant_edit_tid_error_length">Must be 8 words</string>
+    <string name="settings_merchant_edit_batch_error_null">Enter Batch No</string>
+    <string name="settings_merchant_edit_exit_prompt">Discard modified information</string>
+    <string name="settings_merchant_update_success">merchant update success.</string>
+    <string name="settings_merchant_add_success">merchant added success.</string>
+    <!--SYSTEM-->
+    <string name="settings_system_item_support_transaction">Support Transaction</string>
+    <string name="settings_system_item_refund_max_money">Refund Max Amount</string>
+    <string name="settings_system_item_max_count">Max Tranactions Storage</string>
+    <string name="settings_system_item_third_bill_show">Third App Show Result</string>
+    <string name="settings_system_item_second_screen_top">Second Interface Topping</string>
+    <string name="settings_system_item_trace_no">Trace</string>
+    <string name="settings_system_item_time">System Time</string>
+    <string name="settings_system_item_input_tip">Input Tip Amount</string>
+    <string name="settings_system_item_currency_code">Currency Code</string>
+    <string name="settings_system_item_void_card">Void Card</string>
+    <string name="settings_system_item_void_pin">Void PIN</string>
+    <!--SYSTEM::SUPPORT TRANS-->
+    <string name="settings_system_support_item_sale">Sale</string>
+    <string name="settings_system_support_item_void_sale">Void</string>
+    <string name="settings_system_support_item_refund">Refund</string>
+    <string name="settings_system_support_item_balance">Balance</string>
+    <string name="settings_system_support_item_preauth">Pre Auth</string>
+    <string name="settings_system_support_item_scan_pay">Scan Pay</string>
+    <string name="settings_system_support_item_installment_pay">Installment</string>
+
+    <!--SYSTEM::DATE&TIME-->
+    <string name="settings_system_time_item_date">Current Date</string>
+    <string name="settings_system_time_item_time">Current Time</string>
+
+    <!--COMMUNICATION CONFIGURATION-->
+    <string name="settings_net_item_timeout">Net Timeout(Second)</string>
+    <string name="settings_net_item_ssl">SSL</string>
+    <string name="settings_net_item_url">Server Address</string>
+    <string name="settings_net_item_port">Server Port</string>
+    <string name="settings_net_item_tpdu">TPDU</string>
+    <string name="settings_net_item_nii">NII</string>
+
+    <!--KEY MANAGER-->
+    <string name="settings_key_item_index">Master Key Index</string>
+    <string name="settings_key_item_pinpad_timeout">PIN Pad Timeout(Second)</string>
+    <string name="settings_key_item_pinpad_extern">External PIN Pad</string>
+    <string name="settings_key_item_input_key">Input Key</string>
+    <string name="settings_key_item_algorithm">Algorithm Type</string>
+    <string name="settings_key_type_mksk">MKSK</string>
+    <string name="settings_key_type_dukpt">DUKPT</string>
+    <string name="settings_key_item_fly_key">FLY KEY</string>
+    <string name="settings_key_fly_key_summary">Download Master Key</string>
+    <string name="settings_key_fly_key_dialog_title">Download master key</string>
+    <string name="settings_key_fly_key_dialog_built_in">Built-in PIN Pad</string>
+    <string name="settings_key_fly_key_dialog_external">External PIN Pad</string>
+    <string name="settings_key_fly_key_connect_external_pin_pad">Please connect external PIN pad first.</string>
+    <string name="settings_key_fly_key_sending">Fly Key sending&#8230;</string>
+    <string name="settings_key_fly_key_exception">Fly Key Exception</string>
+    <string name="settings_key_fly_key_no_key">No key downloaded</string>
+    <string name="settings_key_fly_key_success">Key installation completed</string>
+    <!--PASSWORD MANAGER-->
+    <string name="settings_password_item_system_admin">System Admin Password</string>
+    <string name="settings_password_item_security">Security Password</string>
+    <string name="settings_password_item_admin">Admin Password</string>
+    <string name="settings_password_old_password_hint">Old Password</string>
+    <string name="settings_password_new_password_hint">New Password</string>
+    <string name="settings_password_new_password_again_hint">Confirmed Password</string>
+    <string name="settings_password_error_password_null">Not null</string>
+    <string name="settings_password_error_password_length">Length must be %1$d</string>
+    <string name="settings_password_error_old_password_incorrect">Incorrect old password.</string>
+    <string name="settings_password_error_new_password_difference">Confirmed password and new password do not match.</string>
+    <string name="settings_password_error_new_password_same_old">The old password and new password must be different.</string>
+
+    <string name="settings_password_update_password_success">Change success</string>
+
+    <!--Printer-->
+    <string name="settings_print_item_count">Receipt Count</string>
+    <string name="settings_print_item_remarks">Receipt Remarks</string>
+    <string name="settings_print_item_external">External Printer</string>
+    <string name="settings_print_item_connect_mode">Printer Connect Mode</string>
+    <string name="settings_print_item_serial_baudrate">Printer Baud Rate</string>
+    <string name="settings_print_item_bluetooth_setting">Bluetooth Setting</string>
+    <string name="settings_print_item_usb_setting">USB Device Setting</string>
+    <string name="settings_print_item_fly_receipt">Fly Receipt</string>
+    <string name="settings_print_item_test">Printer test</string>
+    <string name="settings_print_item_fly_receipt_message">Send the receipt to email</string>
+    <string name="settings_print_test_success">Print success</string>
+    <!--Electric Signatures-->
+    <string name="settings_signature_item_open">Electric Signature</string>
+
+    <!--External Pinpad-->
+    <string name="settings_external_pinpad_item_enable">External PIN Pad</string>
+    <string name="settings_external_pinpad_item_connect_mode">Connect Mode</string>
+    <string name="settings_external_pinpad_item_connect">Connect External PIN Pad</string>
+    <string name="settings_external_pinpad_test_success">External PIN pad is connected.</string>
+    <string name="settings_external_pinpad_test_failed">External PIN pad is not connected.</string>
+
+    <!--:SCANNER-->
+    <string name="settings_scanner_item_priority">Priority Scanner</string>
+    <string name="settings_scanner_item_connect_mode">Scanner Connect Mode</string>
+    <string name="settings_scanner_item_usb_delay">External USB Read Delay(Mill)</string>
+    <string name="settings_scanner_item_serial_baudrate">Scanner Baud Rate</string>
+
+    <string name="settings_scanner_back_camera">Back Camera</string>
+    <string name="settings_scanner_front_camera">Front Camera</string>
+    <string name="settings_scanner_external">External Scanner</string>
+    <string name="settings_scanner_hard">Hard Scanner</string>
+
+    <!--Clear Data-->
+    <string name="settings_clear_down_item_clear_reversal_record">Clear Reversal Data</string>
+    <string name="settings_clear_down_item_clear_elec_signature">Clear Signature Data</string>
+    <string name="settings_clear_down_item_clear_trans_record">Clear Records</string>
+    <string name="settings_clear_down_item_clear_settlement_marks">Clear Settle Flag</string>
+
+    <string name="settings_clear_success">Clear Completion</string>
+    <!--Update Merchant-->
+    <string name="settings_paramfile_import_params_prompt">Update params configuration?</string>
+    <string name="settings_paramfile_import_merchants_prompt">Update merchant configuration?</string>
+    <string name="settings_paramfile_settle_first">Record exist,settle first</string>
+    <string name="settings_paramfile_update_success">Update success</string>
+    <string name="settings_paramfile_update_fail">Update failed</string>
+    <string name="settings_paramfile_no_data">Configuration file is empty</string>
+    <string name="settings_paramfile_no_exist">Configuration file not exist</string>
+    <string name="settings_paramfile_fly_parameter">Fly Parameter</string>
+    <string name="settings_paramfile_fly_parameter_message">Connect Fly Parameter Service</string>
+    <string name="settings_paramfile_update_by_fly_parameter">Update Param By Fly Parameter</string>
+    <string name="settings_paramfile_update_by_pc">Update Param By PC</string>
+    <string name="settings_paramfile_update_pc_merchant">Update Merchant By PC</string>
+    <string name="settings_paramfile_reload_emv_configuration">Reload EMV Configuration</string>
+    <string name="settings_paramfile_emv_aid_capk">Load AID and CAPK</string>
+    <string name="settings_emv_update_failed">EMV configuration load failed</string>
+    <string name="settings_emv_update_success">EMV configuration load success</string>
+
+    <string name="settings_fly_parameter_update_failed">Download failed</string>
+    <string name="settings_fly_parameter_update_success">Download success</string>
+
+    <!--Dock-->
+    <string name="settings_dock_test">Test Dock Connection</string>
+    <string name="settings_dock_set">Dock Service Setting</string>
+    <string name="settings_connect_mode_serial_port">Serial Port</string>
+    <string name="settings_connect_mode_usb">USB</string>
+    <string name="settings_connect_mode_bluetooth">Bluetooth</string>
+    <string name="settings_connect_mode_dock_serial_port">Serial Port (Dock)</string>
+    <string name="settings_connect_mode_dock_usb1">USB1 (Dock)</string>
+    <string name="settings_connect_mode_dock_usb2">USB2 (Dock)</string>
+    <string name="settings_dock_serivce_not_exist">Please install Dock Service</string>
+    <string name="settings_dock_serivce_test_failed">Connect Dock Service failed</string>
+    <string name="settings_dock_serivce_test_success">Connect Dock Service success</string>
+
+    <!--************************************************************************-->
+    <!--Vendor-->
+    <string name="settings_vendor_title">Vendor</string>
+    <string name="settings_vendor_item_reset_password">Reset Password</string>
+    <string name="settings_vendor_item_reset_pos">Reset All Configuration</string>
+    <string name="settings_vendor_flag_item_clear_reversal">Clear Reversal Data</string>
+
+    <string name="settings_reset_password_success">Reset password completion</string>
+    <string name="settings_reset_pos_success_dialog_message">Reset completion, this App will automatically restart</string>
+    <string name="settings_restart_button">Restart</string>
+    <string name="settings_clear_reversal_success">Clear reversal completion</string>
+</resources>
